@@ -10,14 +10,15 @@ body {
     position: relative;
     display: block;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 100%;
+    /* width: 100%; */
+    /* padding: 20px; */
     margin: 0;
     background: #ffffff;
     border-bottom: 1px solid #cccccc;
-    margin-bottom: 50px;
-    padding-right: 588px;
+    margin-bottom: 50px;    
+    /* padding-right: 588px; */
     /* padding-left: 50px; */
-    left: -300px;
+    /* left: -300px; */
 }
 
 h1 {
@@ -33,25 +34,35 @@ h1 {
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: none; 
     padding: 38px;
-    padding-left: 600px;
+    /* transform: rotate(180deg); */
+    /* padding-left: 600px; */
 }
 
 li {
-    border-right: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
     padding-right: 15px;
     display: inline;
-    float: left;
-    padding-left: 15px; 
+    float: right;
+    padding-left: 15px;
+    /* transform: rotate(-180deg); */
 }
 
 li:last-child {
-    border-right: none;
+    border-left: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #bbbbbb;
 }
 
 .wrapper {
-    /* width: 960px; */
+    width: 960px;
     padding: 20px;
     background: #ffffff;
     border: 1px solid #dddddd;
@@ -65,7 +76,7 @@ h2 {
     margin-top: 10px;
     margin-left: 5px;
     margin-bottom: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     border-bottom: 2px solid #cccccc;
 }
 
@@ -80,6 +91,60 @@ p {
     line-height: 32px;
 }
 
+#hangman {
+    position: relative;
+    padding-top: 20px;
+}
+
+#containHangman {
+    position: absolute;
+    text-align: center;
+    /* margin: 0 auto; */
+    left: 50%;
+}
+
+#portImages {
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin-right: 20px;
+}
+
+#portImagesName {
+    background: #4aaaa5;
+    color: #ffffff;
+    /* position: absolute; */
+}
+
+
+input[type=text] {
+    width: 99%;
+    margin-bottom: 20px;
+}
+
+label {
+    color: gray;
+}
+
+#contactMessage {
+    
+}
+
+textarea {
+    width: 99%;
+    height: 200px;
+    resize: none;
+}
+
+input[type=submit] {
+    margin-top: 15px;
+    padding: 10px 25px;
+    color: white;
+    background: #4aaaa5;
+    border: none;
+    font-size: 16px;
+}
+
 .footer {
     position: fixed; bottom:0;
     width: 100%;
@@ -88,6 +153,6 @@ p {
     display: block;
     text-align: center;
     background: #666666;
-    color: lightgray;
+    color: #bbbbbb;
     border-top: 5px solid #4aaaa5;
 }
