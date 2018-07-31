@@ -1,2 +1,2 @@
-# jayhua97.github.io
-My Portfolio
+# Responsive-Portfolio
+homework 2 part 2
